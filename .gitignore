@@ -1,0 +1,17 @@
+.DS_Store
+/diccionarios/*
+.ipynb_checkpoints
+/books/*
+/imagenes/*
+/lib/*
+/venv/*
+/share/*
+/test/*
+/dataframe_libros/*
+/clusteringFiles/*
+complejidad*
+/bin/*
+/books_old/*
+__*
+*.drawio
+*pptx

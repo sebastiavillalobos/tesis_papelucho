@@ -1,0 +1,25 @@
+org: sebiuo2
+app: comprehend
+service: aws-python-http-api-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-2
+  iam:
+    role: arn:aws:iam::235737882736:role/DEV
+
+functions:
+  sentiment:
+    handler: handler.get_sentiment
+    events:
+      - httpApi:
+          path: /sentiment
+          method: get
+  entities:
+    handler: handler.get_entities
+    events:
+      - httpApi:
+          path: /entities
+          method: get

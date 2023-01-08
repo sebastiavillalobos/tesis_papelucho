@@ -1,0 +1,8 @@
+
+pandas
+spacy
+scipy
+matplotlib
+numpy
+bleach
+sklearn

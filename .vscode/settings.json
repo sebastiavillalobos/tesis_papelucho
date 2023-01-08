@@ -1,0 +1,22 @@
+{
+    "python.linting.banditEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    //"editor.fontFamily": "MonoLisa, Menlo, Monaco, 'Courier New', monospace",
+    //"editor.fontFamily": "'Source Code Pro'",
+    //"editor.fontFamily": "'Hack Nerd Font'",
+    //"workbench.sideBar.location": "left", // mueve la barra de las carpetas a la izq
+    "go.toolsManagement.autoUpdate": true,
+    // FONT SIZE
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "markdown.preview.fontSize":15,
+    // FONT
+    "editor.fontFamily": "MONACO",
+    // "terminal.integrated.fontFamily": "'MONACO'",
+    "terminal.integrated.fontFamily": "MONACO",
+    "git.ignoreLimitWarning": true,
+    "prolog.executablePath": "/opt/homebrew/bin/swipl"
+}

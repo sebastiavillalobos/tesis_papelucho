@@ -1,0 +1,21 @@
+Dataset cargado
+            R.A. Salvatore - 2. El valle del viento helado 1 - La Piedra de Cristal  ...  Harry_Potter_y_la_camara_ecreta
+aaag                                                      0.0                        ...                              1.0
+abaje                                                     0.0                        ...                              1.0
+abajo                                                    20.0                        ...                             22.0
+abalanzaba                                                2.0                        ...                              0.0
+
+[4 rows x 4 columns]
+Escalado de variables
+            R.A. Salvatore - 2. El valle del viento helado 1 - La Piedra de Cristal  ...  Harry_Potter_y_la_camara_ecreta
+aaag                                                -0.232579                        ...                        -0.068674
+abaje                                               -0.232579                        ...                        -0.068674
+abajo                                                1.602512                        ...                         1.375417
+abalanzaba                                          -0.049070                        ...                        -0.137440
+
+[4 rows x 4 columns]
+------------------
+Distancia euclídea
+------------------
+
+este archivo qlo pesa 4gb

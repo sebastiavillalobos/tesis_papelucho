@@ -1,0 +1,435 @@
+word,frec,book_tittle,nrc,bing,AFINN
+abeja,1,Papelucho,"['ira', 'miedo']",,
+abierto,1,Papelucho,['miedo'],,
+agarrar,1,Papelucho,"['ira', 'negativo']",,
+agradecido,1,Papelucho,"['alegría', 'positivo']",positivo,2
+aguante,1,Papelucho,"['confianza', 'positivo']",,2
+alboroto,1,Papelucho,"['ira', 'miedo', 'negativo']",negativo,
+amenaza,1,Papelucho,"['ira', 'miedo', 'negativo']",negativo,-2
+amistad,1,Papelucho,"['alegría', 'confianza', 'positivo']",,
+aniversario,1,Papelucho,"['alegría', 'asombro', 'positivo']",,
+anticipado,1,Papelucho,['premonición'],,
+aprovechar,1,Papelucho,"['miedo', 'negativo']",,
+arena,1,Papelucho,"['confianza', 'positivo']",,
+artista,1,Papelucho,['positivo'],,
+ataques,1,Papelucho,"['ira', 'negativo']",,
+atroz,1,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,
+aturdida,1,Papelucho,['negativo'],negativo,
+autor,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'positivo', 'tristeza']",,-2
+avaricia,1,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,
+aventurero,1,Papelucho,['positivo'],positivo,2
+azufre,1,Papelucho,"['ira', 'miedo', 'negativo']",negativo,
+barra,1,Papelucho,"['confianza', 'miedo', 'positivo']",,
+beneficio,1,Papelucho,['positivo'],positivo,2
+blanco,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,
+brigada,1,Papelucho,"['miedo', 'negativo']",,
+broma,1,Papelucho,"['asombro', 'negativo']",negativo,2
+bruja,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",,
+brutal,1,Papelucho,"['ira', 'miedo', 'negativo']",negativo,
+burlarse,1,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,
+calambre,1,Papelucho,"['negativo', 'premonición']",negativo,-1
+caliente,1,Papelucho,['ira'],positivo,
+calma,1,Papelucho,"['positivo', 'premonición']",negativo,2
+cambio,1,Papelucho,['miedo'],,
+canalla,1,Papelucho,"['confianza', 'disgusto', 'ira', 'miedo', 'negativo']",negativo,
+cantar,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición', 'tristeza']",,
+capaz,1,Papelucho,[],positivo,1
+cartucho,1,Papelucho,['miedo'],,
+casarse,1,Papelucho,"['alegría', 'asombro', 'confianza', 'miedo', 'positivo', 'premonición']",,
+caza,1,Papelucho,"['ira', 'miedo', 'negativo', 'premonición']",,
+cazuela,1,Papelucho,[],negativo,
+chorro,1,Papelucho,"['alegría', 'disgusto', 'negativo']",positivo,
+ciego,1,Papelucho,['negativo'],negativo,-1
+cobarde,1,Papelucho,"['disgusto', 'miedo', 'negativo', 'tristeza']",negativo,-2
+colosal,1,Papelucho,['positivo'],,
+cometer,1,Papelucho,[],,1
+comienzo,1,Papelucho,['premonición'],,
+completo,1,Papelucho,['positivo'],,
+comunista,1,Papelucho,['negativo'],,
+concedido,1,Papelucho,['positivo'],,1
+conciencia,1,Papelucho,"['confianza', 'positivo']",,
+confianza,1,Papelucho,"['alegría', 'confianza', 'miedo', 'positivo']",positivo,1
+congreso,1,Papelucho,"['confianza', 'disgusto']",,
+construir,1,Papelucho,['positivo'],,
+consuelo,1,Papelucho,['positivo'],positivo,
+convencido,1,Papelucho,['confianza'],,-1
+coro,1,Papelucho,"['alegría', 'confianza', 'positivo']",,
+cosecha,1,Papelucho,"['alegría', 'positivo', 'premonición']",,
+cosquillas,1,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",positivo,
+crecer,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,
+crema,1,Papelucho,"['alegría', 'asombro', 'positivo', 'premonición']",,
+creyendo,1,Papelucho,"['confianza', 'positivo']",,
+cruel,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-3
+descompuesto,1,Papelucho,['tristeza'],,
+desesperado,1,Papelucho,"['miedo', 'negativo', 'tristeza']",negativo,-3
+desmayo,1,Papelucho,"['asombro', 'miedo', 'negativo', 'tristeza']",,
+deuda,1,Papelucho,"['negativo', 'tristeza']",negativo,-2
+diablo,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'premonición', 'tristeza']",negativo,
+diligencia,1,Papelucho,"['confianza', 'positivo']",positivo,
+disgusto,1,Papelucho,[],negativo,-2
+doloroso,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+don,1,Papelucho,"['confianza', 'positivo']",,
+duda,1,Papelucho,"['confianza', 'miedo', 'negativo', 'tristeza']",negativo,-1
+educar,1,Papelucho,['positivo'],,
+elegante,1,Papelucho,"['alegría', 'positivo']",positivo,2
+embrujado,1,Papelucho,"['miedo', 'negativo', 'tristeza']",,-2
+empresa,1,Papelucho,['premonición'],,
+engañado,1,Papelucho,"['ira', 'negativo']",,-3
+engaño,1,Papelucho,"['asombro', 'confianza', 'disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+enojado,1,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,-3
+enredo,1,Papelucho,['negativo'],negativo,
+enseñar,1,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo']",,
+enterrar,1,Papelucho,['tristeza'],,
+equivocado,1,Papelucho,"['disgusto', 'miedo', 'negativo']",negativo,-2
+escapado,1,Papelucho,['miedo'],,
+escriba,1,Papelucho,['positivo'],,
+especial,1,Papelucho,"['alegría', 'positivo']",,
+estofado,1,Papelucho,[],negativo,
+evangelio,1,Papelucho,"['confianza', 'positivo']",,
+examen,1,Papelucho,"['asombro', 'miedo', 'negativo']",,
+excepcional,1,Papelucho,"['alegría', 'negativo', 'positivo']",positivo,5
+facilidad,1,Papelucho,['positivo'],positivo,2
+famoso,1,Papelucho,['positivo'],positivo,
+fatiga,1,Papelucho,['negativo'],negativo,-2
+fila,1,Papelucho,"['ira', 'negativo']",,
+firma,1,Papelucho,['confianza'],,
+firme,1,Papelucho,"['confianza', 'positivo']",negativo,2
+flaco,1,Papelucho,[],negativo,
+fuerte,1,Papelucho,[],negativo,
+fuerza,1,Papelucho,"['confianza', 'ira', 'miedo', 'negativo', 'positivo']",,2
+gallo,1,Papelucho,[],,-5
+garganta,1,Papelucho,"['disgusto', 'negativo']",,
+gastos,1,Papelucho,['negativo'],,
+gloria,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",positivo,2
+grieta,1,Papelucho,['negativo'],negativo,
+gritar,1,Papelucho,"['asombro', 'disgusto', 'ira', 'miedo', 'negativo']",negativo,-2
+guardar,1,Papelucho,"['alegría', 'confianza', 'positivo']",,2
+guardia,1,Papelucho,"['confianza', 'miedo', 'positivo']",,
+guarida,1,Papelucho,['negativo'],,
+guerra,1,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",,-2
+habilidad,1,Papelucho,[],positivo,
+hambriento,1,Papelucho,"['negativo', 'premonición']",,-2
+hechos,1,Papelucho,"['confianza', 'positivo']",,
+herida,1,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+honor,1,Papelucho,"['confianza', 'positivo']",positivo,2
+huir,1,Papelucho,"['miedo', 'negativo', 'tristeza']",negativo,
+humo,1,Papelucho,['negativo'],negativo,
+incendio,1,Papelucho,"['ira', 'negativo']",,
+indulgencia,1,Papelucho,[],positivo,
+infantil,1,Papelucho,"['alegría', 'asombro', 'disgusto', 'ira', 'miedo', 'negativo', 'positivo', 'premonición']",,
+injusticia,1,Papelucho,"['ira', 'negativo', 'tristeza']",negativo,-2
+inteligente,1,Papelucho,"['confianza', 'positivo']",positivo,2
+inventor,1,Papelucho,['positivo'],,
+ira,1,Papelucho,"['ira', 'miedo', 'negativo']",negativo,-3
+joven,1,Papelucho,"['alegría', 'asombro', 'positivo', 'premonición']",,
+jurar,1,Papelucho,"['confianza', 'positivo']",,-2
+limpio,1,Papelucho,"['alegría', 'confianza', 'positivo']",positivo,2
+llenar,1,Papelucho,['confianza'],,
+loca,1,Papelucho,"['ira', 'miedo', 'negativo']",negativo,
+luto,1,Papelucho,"['negativo', 'tristeza']",,-2
+mancha,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,2
+maravilloso,1,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo']",positivo,3
+meditar,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,
+menor,1,Papelucho,"['disgusto', 'negativo', 'positivo']",,
+miel,1,Papelucho,['positivo'],,
+milagro,1,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",positivo,4
+moribundo,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+nariz,1,Papelucho,['disgusto'],,
+naufragado,1,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",,
+necesario,1,Papelucho,['negativo'],,
+necesidad,1,Papelucho,['tristeza'],,
+negro,1,Papelucho,"['negativo', 'tristeza']",,-5
+nervioso,1,Papelucho,"['miedo', 'negativo', 'premonición']",negativo,-2
+novio,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición', 'tristeza']",positivo,
+nublado,1,Papelucho,"['negativo', 'tristeza']",negativo,-1
+obligar,1,Papelucho,"['confianza', 'disgusto', 'ira', 'miedo', 'negativo']",negativo,
+olvidar,1,Papelucho,"['miedo', 'negativo', 'tristeza']",,-1
+ordenar,1,Papelucho,[],negativo,
+organizado,1,Papelucho,['positivo'],,
+pago,1,Papelucho,['negativo'],,
+palabras,1,Papelucho,"['ira', 'negativo']",,
+parecido,1,Papelucho,['confianza'],,
+payaso,1,Papelucho,"['alegría', 'asombro', 'positivo', 'premonición']",,
+pega,1,Papelucho,"['asombro', 'negativo']",negativo,
+peligroso,1,Papelucho,"['miedo', 'negativo', 'premonición', 'tristeza']",negativo,
+perdonado,1,Papelucho,['positivo'],,
+pesadilla,1,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,
+peso,1,Papelucho,"['alegría', 'asombro', 'confianza', 'disgusto', 'miedo', 'negativo', 'positivo', 'premonición', 'tristeza']",,
+picnic,1,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",,
+pie,1,Papelucho,['confianza'],,
+piscina,1,Papelucho,['positivo'],,
+pistola,1,Papelucho,"['ira', 'miedo', 'negativo']",,-1
+pollo,1,Papelucho,['miedo'],,
+presidente,1,Papelucho,"['confianza', 'positivo']",,
+presto,1,Papelucho,"['alegría', 'asombro', 'positivo']",,
+puerto,1,Papelucho,['confianza'],,
+pulga,1,Papelucho,"['disgusto', 'negativo']",,
+quemar,1,Papelucho,[],negativo,
+quitar,1,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",,
+recibido,1,Papelucho,['positivo'],,
+recoger,1,Papelucho,['positivo'],,
+reconocimiento,1,Papelucho,['positivo'],,
+regular,1,Papelucho,['positivo'],,
+reloj,1,Papelucho,['premonición'],,
+reserva,1,Papelucho,['positivo'],,
+responsabilidad,1,Papelucho,"['confianza', 'positivo']",negativo,
+riendo,1,Papelucho,"['alegría', 'positivo']",,1
+romper,1,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+roto,1,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,-1
+sacrificio,1,Papelucho,"['asombro', 'disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",,
+saludar,1,Papelucho,[],,1
+sano,1,Papelucho,"['alegría', 'positivo']",positivo,
+sapo,1,Papelucho,"['disgusto', 'negativo']",,
+seguridad,1,Papelucho,[],,1
+sistema,1,Papelucho,['confianza'],,
+suave,1,Papelucho,[],negativo,
+sucia,1,Papelucho,"['disgusto', 'negativo']",,
+sucio,1,Papelucho,"['disgusto', 'negativo']",negativo,-2
+sufrimiento,1,Papelucho,"['disgusto', 'miedo', 'negativo', 'tristeza']",negativo,-2
+sujeto,1,Papelucho,['negativo'],,
+suspiro,1,Papelucho,[],,-2
+taxi,1,Papelucho,['positivo'],,
+terror,1,Papelucho,"['miedo', 'negativo']",negativo,-3
+tranquilizador,1,Papelucho,[],,2
+tremendamente,1,Papelucho,['positivo'],positivo,
+tumor,1,Papelucho,"['miedo', 'negativo', 'tristeza']",,-2
+vacaciones,1,Papelucho,"['alegría', 'positivo', 'premonición']",,
+veneno,1,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,
+viaje,1,Papelucho,"['alegría', 'asombro', 'miedo', 'positivo', 'premonición']",,
+visita,1,Papelucho,['positivo'],,
+viuda,1,Papelucho,['tristeza'],,
+vivo,1,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,1
+accidente,2,Papelucho,"['asombro', 'miedo', 'negativo', 'tristeza']",,-2
+almohada,2,Papelucho,['positivo'],,
+armado,2,Papelucho,"['ira', 'miedo', 'negativo', 'positivo']",,
+arrepentido,2,Papelucho,"['negativo', 'tristeza']",negativo,-2
+arrepentimiento,2,Papelucho,"['miedo', 'positivo']",,
+asustado,2,Papelucho,"['asombro', 'miedo', 'negativo']",,-2
+aturdido,2,Papelucho,"['asombro', 'miedo', 'negativo']",positivo,-2
+aventuras,2,Papelucho,"['positivo', 'premonición']",,2
+bajar,2,Papelucho,['negativo'],,
+biblioteca,2,Papelucho,['positivo'],,
+burla,2,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,
+carne,2,Papelucho,['disgusto'],,
+castigar,2,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+cemento,2,Papelucho,"['confianza', 'premonición']",,
+chocolate,2,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,
+completamente,2,Papelucho,"['confianza', 'positivo']",,
+conocido,2,Papelucho,['positivo'],,
+contento,2,Papelucho,"['alegría', 'positivo', 'premonición']",positivo,3
+cuchillo,2,Papelucho,[],negativo,
+culpable,2,Papelucho,"['ira', 'negativo', 'tristeza']",negativo,-3
+dejar,2,Papelucho,"['asombro', 'negativo', 'tristeza']",,-1
+descubrir,2,Papelucho,['asombro'],,
+despertar,2,Papelucho,"['positivo', 'premonición']",,
+desprecio,2,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,-2
+dios,2,Papelucho,"['alegría', 'confianza', 'miedo', 'positivo', 'premonición']",,1
+divertido,2,Papelucho,"['alegría', 'positivo', 'premonición']",positivo,3
+enfermedad,2,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+enfermero,2,Papelucho,"['confianza', 'positivo']",,
+enorme,2,Papelucho,[],,1
+entretenido,2,Papelucho,"['alegría', 'positivo', 'premonición']",positivo,2
+epidemia,2,Papelucho,"['asombro', 'disgusto', 'ira', 'miedo', 'negativo', 'premonición', 'tristeza']",negativo,
+esperanzas,2,Papelucho,[],,2
+extranjero,2,Papelucho,"['disgusto', 'miedo', 'negativo']",,
+feo,2,Papelucho,"['disgusto', 'negativo']",negativo,-3
+fondo,2,Papelucho,"['negativo', 'tristeza']",,
+forma,2,Papelucho,['positivo'],,
+furioso,2,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,-3
+genial,2,Papelucho,"['alegría', 'positivo']",positivo,3
+gusano,2,Papelucho,"['asombro', 'disgusto', 'negativo', 'premonición']",,
+helada,2,Papelucho,[],negativo,
+hermano,2,Papelucho,"['confianza', 'positivo']",,
+idiota,2,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,-3
+importante,2,Papelucho,"['confianza', 'positivo']",positivo,2
+injusto,2,Papelucho,"['disgusto', 'ira', 'negativo', 'tristeza']",negativo,-2
+inmenso,2,Papelucho,['positivo'],positivo,
+lamento,2,Papelucho,"['disgusto', 'miedo', 'negativo', 'tristeza']",negativo,
+limpiar,2,Papelucho,['positivo'],,
+lindo,2,Papelucho,['positivo'],positivo,2
+llegar,2,Papelucho,['premonición'],,1
+madre,2,Papelucho,"['alegría', 'confianza', 'negativo', 'positivo', 'premonición', 'tristeza']",,
+maestro,2,Papelucho,"['confianza', 'positivo']",positivo,
+maldad,2,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,
+matar,2,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,-3
+montaña,2,Papelucho,['premonición'],,
+mortal,2,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+niño,2,Papelucho,"['alegría', 'disgusto', 'negativo', 'positivo', 'premonición']",,
+ocioso,2,Papelucho,['negativo'],negativo,
+oficial,2,Papelucho,"['confianza', 'positivo']",,
+oro,2,Papelucho,['positivo'],positivo,
+palabra,2,Papelucho,"['confianza', 'positivo']",,
+partidarios,2,Papelucho,[],,1
+pegado,2,Papelucho,[],negativo,-2
+pensamiento,2,Papelucho,['premonición'],,
+podrido,2,Papelucho,"['disgusto', 'negativo']",,
+pregunta,2,Papelucho,['positivo'],,
+premio,2,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",positivo,3
+preso,2,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+queja,2,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,
+regio,2,Papelucho,"['confianza', 'positivo']",positivo,
+remedio,2,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",positivo,
+ruleta,2,Papelucho,['premonición'],,
+sacrificios,2,Papelucho,"['disgusto', 'miedo', 'negativo', 'tristeza']",,
+salido,2,Papelucho,"['negativo', 'tristeza']",,
+selva,2,Papelucho,['miedo'],,
+servir,2,Papelucho,"['confianza', 'negativo']",,
+silencio,2,Papelucho,['positivo'],,
+sufrir,2,Papelucho,['negativo'],negativo,-2
+tarea,2,Papelucho,['positivo'],,
+temblor,2,Papelucho,"['ira', 'miedo', 'negativo', 'premonición', 'tristeza']",,-2
+terriblemente,2,Papelucho,['tristeza'],negativo,-3
+testimonio,2,Papelucho,['confianza'],,
+tierra,2,Papelucho,['positivo'],,
+tonto,2,Papelucho,"['alegría', 'negativo']",negativo,-1
+tos,2,Papelucho,"['disgusto', 'negativo']",,
+tratar,2,Papelucho,"['alegría', 'asombro', 'confianza', 'disgusto', 'ira', 'miedo', 'negativo', 'positivo', 'premonición', 'tristeza']",,
+valiente,2,Papelucho,"['miedo', 'positivo']",positivo,2
+vergüenza,2,Papelucho,"['asombro', 'disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+victoria,2,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",positivo,
+acorde,3,Papelucho,['positivo'],,
+alto,3,Papelucho,['negativo'],,
+ambulancia,3,Papelucho,"['confianza', 'miedo']",,
+ataque,3,Papelucho,"['ira', 'miedo', 'negativo']",negativo,-1
+ayudar,3,Papelucho,"['confianza', 'positivo']",,
+boca,3,Papelucho,['asombro'],,
+bofetada,3,Papelucho,"['asombro', 'ira', 'negativo']",negativo,
+bomba,3,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-1
+borrar,3,Papelucho,"['miedo', 'negativo']",negativo,
+caer,3,Papelucho,"['negativo', 'tristeza']",negativo,
+carga,3,Papelucho,['negativo'],negativo,-2
+caro,3,Papelucho,"['disgusto', 'ira', 'negativo', 'tristeza']",negativo,
+carta,3,Papelucho,['premonición'],,
+chiste,3,Papelucho,['negativo'],negativo,2
+choque,3,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+cuentas,3,Papelucho,['confianza'],,
+dando,3,Papelucho,['positivo'],,
+desayuno,3,Papelucho,['positivo'],,
+escape,3,Papelucho,"['miedo', 'negativo', 'positivo', 'premonición']",negativo,-1
+esperar,3,Papelucho,"['asombro', 'confianza', 'negativo', 'positivo', 'premonición']",,-1
+felicidad,3,Papelucho,"['alegría', 'positivo', 'premonición']",positivo,3
+fuego,3,Papelucho,['miedo'],,-2
+ganar,3,Papelucho,['positivo'],,
+grave,3,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+listo,3,Papelucho,['premonición'],positivo,
+llamar,3,Papelucho,[],negativo,
+lleno,3,Papelucho,['disgusto'],,
+mentira,3,Papelucho,"['disgusto', 'ira', 'negativo', 'tristeza']",negativo,
+monstruo,3,Papelucho,"['miedo', 'negativo']",negativo,
+nadar,3,Papelucho,"['alegría', 'miedo', 'positivo', 'premonición']",,
+odio,3,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+pandilla,3,Papelucho,"['ira', 'miedo', 'negativo']",,
+perder,3,Papelucho,"['asombro', 'disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+perfecto,3,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",positivo,3
+playa,3,Papelucho,['alegría'],,
+pobreza,3,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-1
+puesto,3,Papelucho,['disgusto'],negativo,-2
+querer,3,Papelucho,"['negativo', 'tristeza']",,
+robado,3,Papelucho,"['ira', 'negativo']",negativo,-2
+robo,3,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+seguro,3,Papelucho,"['alegría', 'confianza', 'positivo']",positivo,1
+sopa,3,Papelucho,['positivo'],,
+susto,3,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'premonición']",negativo,-2
+tempestad,3,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'premonición', 'tristeza']",negativo,
+tranquilo,3,Papelucho,"['alegría', 'positivo', 'tristeza']",positivo,2
+triste,3,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+basura,4,Papelucho,"['disgusto', 'negativo', 'tristeza']",negativo,
+canario,4,Papelucho,['positivo'],,
+castigado,4,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'premonición', 'tristeza']",,-2
+confesar,4,Papelucho,"['confianza', 'negativo', 'positivo']",negativo,
+criminal,4,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,-3
+disparo,4,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'tristeza']",,-2
+equipo,4,Papelucho,['confianza'],,
+falta,4,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,-2
+fiebre,4,Papelucho,['miedo'],negativo,
+fiesta,4,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",positivo,
+juego,4,Papelucho,"['asombro', 'negativo', 'premonición']",,
+justo,4,Papelucho,['positivo'],positivo,
+mermelada,4,Papelucho,['positivo'],negativo,
+mirando,4,Papelucho,['negativo'],,
+parar,4,Papelucho,[],,-1
+paro,4,Papelucho,['negativo'],,
+paz,4,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",positivo,2
+permiso,4,Papelucho,['positivo'],,
+ruido,4,Papelucho,['negativo'],negativo,
+salida,4,Papelucho,"['asombro', 'miedo', 'negativo', 'tristeza']",,
+saltar,4,Papelucho,"['alegría', 'positivo']",,
+secreto,4,Papelucho,"['asombro', 'confianza']",,
+teniente,4,Papelucho,['confianza'],,
+tienda,4,Papelucho,"['positivo', 'premonición']",,
+amor,5,Papelucho,"['alegría', 'positivo']",positivo,3
+caballo,5,Papelucho,['confianza'],,
+cielo,5,Papelucho,"['alegría', 'confianza', 'positivo']",,
+contar,5,Papelucho,"['confianza', 'positivo']",,
+derecho,5,Papelucho,[],,1
+edificio,5,Papelucho,['positivo'],,
+fantasma,5,Papelucho,"['miedo', 'negativo']",,-1
+golpe,5,Papelucho,"['asombro', 'ira', 'miedo', 'negativo']",negativo,-2
+gusto,5,Papelucho,"['alegría', 'confianza', 'positivo']",positivo,
+hablar,5,Papelucho,['positivo'],,
+muerte,5,Papelucho,"['asombro', 'disgusto', 'ira', 'miedo', 'negativo', 'premonición', 'tristeza']",negativo,-2
+pagar,5,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,-1
+pecado,5,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,
+pelea,5,Papelucho,"['asombro', 'ira', 'negativo']",negativo,
+pirata,5,Papelucho,"['ira', 'negativo']",,
+rico,5,Papelucho,[],positivo,2
+saco,5,Papelucho,[],negativo,
+trabajo,5,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",negativo,
+tremendo,5,Papelucho,"['ira', 'miedo', 'negativo']",,
+aburrido,6,Papelucho,"['negativo', 'tristeza']",negativo,-2
+alma,6,Papelucho,['positivo'],,
+baño,6,Papelucho,['positivo'],,
+cuento,6,Papelucho,['positivo'],,
+dulces,6,Papelucho,"['alegría', 'positivo', 'premonición']",,
+furia,6,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,
+jugar,6,Papelucho,['negativo'],,
+llorar,6,Papelucho,"['negativo', 'tristeza']",negativo,-2
+olvido,6,Papelucho,"['ira', 'miedo', 'negativo']",negativo,
+pan,6,Papelucho,['negativo'],,
+regalo,6,Papelucho,"['alegría', 'asombro', 'positivo', 'premonición']",,2
+risa,6,Papelucho,"['alegría', 'asombro', 'positivo', 'premonición']",,1
+robar,6,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+suelo,6,Papelucho,['confianza'],,
+castigo,7,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo']",negativo,
+clase,7,Papelucho,"['alegría', 'confianza', 'positivo']",,2
+costa,7,Papelucho,['positivo'],,
+enfermo,7,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+esperando,7,Papelucho,['premonición'],,
+invisible,7,Papelucho,[],negativo,
+perdido,7,Papelucho,"['negativo', 'tristeza']",negativo,-3
+recreo,7,Papelucho,"['alegría', 'positivo', 'premonición']",,
+azul,8,Papelucho,['tristeza'],,
+culpa,8,Papelucho,"['disgusto', 'ira', 'negativo', 'tristeza']",negativo,-2
+grito,8,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-1
+miedo,8,Papelucho,"['asombro', 'ira', 'miedo', 'negativo', 'premonición']",negativo,-2
+morir,8,Papelucho,"['miedo', 'negativo', 'tristeza']",negativo,-3
+promesa,8,Papelucho,"['alegría', 'confianza', 'positivo']",positivo,1
+caballero,9,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'positivo']",,
+olor,9,Papelucho,"['disgusto', 'ira', 'negativo']",negativo,
+comer,10,Papelucho,['positivo'],,
+feliz,10,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",positivo,3
+malo,10,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",negativo,-3
+pena,10,Papelucho,"['ira', 'miedo', 'negativo', 'tristeza']",negativo,-2
+santo,10,Papelucho,"['alegría', 'asombro', 'confianza', 'positivo', 'premonición']",positivo,
+comida,11,Papelucho,"['alegría', 'confianza', 'positivo']",,
+estupendo,11,Papelucho,['tristeza'],positivo,4
+hambre,11,Papelucho,[],,-2
+sangre,11,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'tristeza']",,
+buscar,12,Papelucho,['premonición'],,
+señor,12,Papelucho,"['confianza', 'disgusto', 'negativo', 'positivo']",,
+mar,14,Papelucho,['positivo'],,
+terrible,15,Papelucho,"['disgusto', 'ira', 'miedo', 'negativo', 'premonición', 'tristeza']",negativo,-3
+llave,16,Papelucho,['negativo'],,
+salir,16,Papelucho,"['premonición', 'tristeza']",,
+puerta,17,Papelucho,['confianza'],,
+rabia,17,Papelucho,"['ira', 'negativo']",negativo,-2
+caso,18,Papelucho,"['miedo', 'negativo', 'tristeza']",,
+amigo,19,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,
+tiempo,19,Papelucho,['premonición'],,
+pobre,20,Papelucho,"['negativo', 'tristeza']",negativo,
+suerte,20,Papelucho,"['alegría', 'asombro', 'positivo', 'premonición']",positivo,3
+diario,30,Papelucho,"['alegría', 'confianza', 'positivo', 'premonición']",,
+padre,36,Papelucho,['confianza'],,
+casa,42,Papelucho,['positivo'],,
+mañana,42,Papelucho,['premonición'],,
+papa,57,Papelucho,['positivo'],,

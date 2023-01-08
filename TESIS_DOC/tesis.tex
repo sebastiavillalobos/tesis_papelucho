@@ -1,0 +1,340 @@
+    %=================================
+    % Capitulo 1 - Objetivos del proyecto
+    %=================================
+\chapter{Objetivos del proyecto}\label{intro:objetivos}    
+
+        %------------------------------------------
+        % Sección 1.1 - Objetivo general
+        %------------------------------------------
+        
+\section{Objetivo general}
+
+Usar técnicas de minería de texto para caracterizar la serie Papelucho y otros libros relevantes en la formación educacional mediante análisis de sentimientos, evaluando su correspondencia con resultados descritos por la literatura obtenidos mediante análisis cualitativos.
+
+        %------------------------------------------
+        % Sección 1.2 - Objetivos específicos
+        %------------------------------------------
+        
+\section{Objetivos específicos}
+
+\begin{enumerate}
+
+\item Crear una base de datos representativa y depurada de la serie Papelucho y otros libros para ser analizados.
+
+\item Efectuar análisis descriptivo, de frecuencia y complejidad de los libros pertenecientes a la base de datos construida.
+
+\item Analizar sentimientos en los libros seleccionados mediante minería de texto, considerando diferentes \textit{sentiments datasets}.
+
+\item Analizar y comparar cada libro identificando las características particulares, efectuando agrupamiento entre ellos.
+
+\item Contrastar los resultados con los estudios cualitativos de la literatura.
+
+\end{enumerate}
+
+%=================================
+% Capítulo 2 - Descripción del problema
+%=================================
+
+\chapter{Descripción del problema}\label{cap:introduccion}
+
+    %=================================
+    % Sección 1.1 - Antecedentes y motivación
+    %=================================
+
+\section{Antecedentes y motivación}\label{sec:motivacion}
+
+El año 2018, Chile obtuvo 452 de los 600 puntos en la prueba de habilidades lectoras realizado cada 3 años por el Programa internacional para la Evaluación de Estudiantes (PISA, por su sigla en inglés). Con este resultado, Chile se posiciona por debajo de 41 de los 79 países participantes de la Organización para la Cooperación y el Desarrollo Económicos (OCDE). La evaluación considera el desarrollo de habilidades y conocimientos alcanzados por el estudiantado de 15 años, evaluando los resultados de aprendizajes asociados a: comprender, usar, evaluar y reflexionar sobre los textos e involucrarse con ellos, desarrollar conocimiento y participar en la sociedad. Además, evalúa la preparación de lectores competentes para interactuar con información escrita presentada en textos para un propósito específico. Para ello, los y las lectoras deben comprender el texto e integrarlo con sus conocimientos preexistentes \citep{CALIDAD2019}.
+
+El año 2015 el Ministerio Chileno de Educación (MINEDUC), consciente de la importancia de las competencias lectoras y los bajos resultados alcanzados en las últimas ediciones de la evaluación, asignó recursos y dio prioridad al fomento de la lectura junto al Ministerio de Desarrollo Social y el Ministerio de la Cultura, las Artes y el Patrimonio, creando el \textit{Plan Nacional de la Lectura}, que apunta a generar distintas estrategias de lectura entre los escolares del país \citep{PLANNACIONAL2015}. Este programa se mejora cada año, ya que Chile no ha logrado alcanzar mejores puntajes en comprensión lectora, según los resultados entregados por la \citet{CALIDAD2019}.
+
+Como parte de este \textit{Plan Nacional de Lectura}, el MINEDUC recomienda libros que promueven el desarrollo de los lectores que se encuentran en la etapa escolar. Esta lista es publicada cada año por \textit{La unidad de currículum y evaluación}, y dentro de esta lista, los libros de \textbf{PAPELUCHO} se encuentran presente en la mayoría de las ediciones año tras año. La colección de Papelucho ha logrado permanecer popular durante las diferentes generaciones de chilenos, debido a su atemporalidad, logrando identificar a los lectores sin importar la época y contexto en la que se lea. 
+
+La colección de libros de Papelucho fue escrita por Marcela Paz entre los años 1947 y 1974 y cuentan las aventuras de un niño chileno "común y corriente” de entre 8 y 9 años edad que es inquieto, inteligente, rápido y siempre está inventando algo para no aburrirse. Debido a estas cualidades genera situaciones humorísticas, como preparar un sándwich para un ratón, adiestrar moscas mensajeras, organizar un criadero de jaibas, crear una revista de chistes, o hasta hablar con un marciano, por lo que este niño ingenioso, acerca al lector escribiendo sus vivencias en un diario de vida. Los problemas que vive son tan variados que la serie la componen los siguientes 12 libros; \textit{"Papelucho", "Papelucho misionero", "Papelucho historiador", "Papelucho dislexo", "Papelucho y mi hermana Ji", "Papelucho y mi hermano hippie", "Diario secreto de Papelucho y el marciano", "Papelucho perdido", "Papelucho en la clínica", "Papelucho en vacaciones", "Papelucho detective" y "Papelucho casi huérfano".} 
+
+Según la Doctora en Literatura Chilena e Hispanoamericana Isabel \citet{Ibaceta2018}, quién estudió la obra de Marcela Paz cualitativamente en su tesis doctoral, la serie de libros Papelucho pertenece al tipo narrativo, y se caracteriza por su riqueza del lenguaje, capacidad imaginativa del protagonista, ingenio, sentido del humor, y la ironía. Destaca la narración construida con base a la voz infantil, a través de una red de estrategias literario-lingüísticas complejas, y la aplicación de un juego semántico que \textit{ficcionaliza} el nivel de conocimiento del lenguaje por parte del niño, y de mecanismos lúdicos de invención de frases y palabras. Por otro lado, dada su relevancia en el desarrollo de la inteligencia de los niños, la serie ha sido traducida a varios idiomas \citep{HINIOJOSA2011}. Sin embargo, no existen estudios cuantitativos que hayan caracterizado toda la serie, limitándose a estudios parciales que involucran libros específicos.
+
+La importancia de la serie Papelucho en la literatura chilena y en el desarrollo de los niños, hace indispensable realizar análisis de estos libros, para poder caracterizarle, cuantificando las emociones presentes en el texto, su intensidad durante la narrativa, palabras utilizadas, y como se forman las oraciones y frases. Estas características o patrones, permitirán encontrar similitudes o diferencias con otros textos que son recomendados para la formación de lectores competentes.
+
+La minería de texto y el análisis de sentimientos han permitido caracterizar exitosamente libros en español como \textit{El quijote de la mancha} \citep{Quixote-R}, La serie completa de \textit{Harry Potter} \citep{HarryPotter-R}, también analizada la novela \textit{Madame Bovary} por su influencia en \textit{La Reagenta} y sus similitudes, realizado por \citet{zahonero2020nueva}. Es importante mencionar el trabajo realizado por \citet{apastyle} en \textit{Los Episodios nacionales}, que son una colección de cuarenta y seis novelas históricas escritas por Benito Pérez Galdós donde utiliza R para el desarrollo de su tutorial de análisis de sentimientos. Este proyecto propone aplicarán métodos similares a los usados por estos autores, para caracterizar la serie de libros Papelucho, incluyendo análisis de sentimientos, compararles con otros libros infantiles del género narrativo y evaluar su correspondencia con resultados cualitativos descritos por la literatura.
+
+    %=================================
+    % Sección 1.2 - Estado del arte
+    %=================================
+    
+\section{Estado del arte} \label{sec:estado_arte}
+
+        %------------------------------------------
+        % Sección 1.2.1 - Análisis de la serie de libros Papelucho en la literatura
+        %------------------------------------------
+    
+\subsection{Análisis de la serie de libros Papelucho en la literatura}
+
+En la actualidad, la literatura dispone de trabajos de investigación relacionados con el análisis de los libros de Papelucho enfocados en describir \textbf{cualitativamente} los elementos que caracterizan y son transversales en la serie. Entre las investigaciones cualitativas, destaca el trabajo desarrollado por \citet{Ibaceta2021}, que describe como el protagonista de los libros de Marcela Paz se enfrenta a las consecuencias de sus hazañas desde el punto de vista de un niño. Esta investigación señala que una de las características esenciales de la serie Papelucho, es la percepción que el protagonista tiene de la realidad, donde utiliza la imaginación para dar una sensación de poca gravedad a los problemas que aparecen en el desarrollo de sus aventuras. Por otro lado, el trabajo desarrollado por \citet{VILLARROEL2015}, indica que estos sentimientos positivos entregados por la serie fomentan la imaginación, ya que ayudan a vivir emociones positivas en el lector, que tienen efectos beneficiosos sobre el aprendizaje al mejorar procesos relacionados con la atención, la memoria, resolución creativa de problemas, desarrollo de la afectividad y ayuda en el entendimiento del proceso mismo de aprender. Adicionalmente, el trabajo de \citet{TRONCOSO-ARAOS2019} da cuenta de la importancia del vocabulario en los textos de la serie, destacando el uso de palabras inventadas, que aunque no tengan un significado en el diccionario, permite a los lectores fácilmente darle uno generando complicidad con el protagonista, e incentivando nuevamente la imaginación. Estos investigadores también indican que estas experiencias confirman también que una obra de calidad literaria pertinente al mundo de los lectores puede contribuir a que desarrollen lecturas ricas en sentido y que despierten su interés por la lectura.
+
+Si bien, no corresponden a trabajos formales, existen opiniones formalizadas en la web por especialistas en el área que señalas que Papelucho se asemeja a otros libros como: \textit{Mala onda, Palomita blanca, Cuentatrapos, La composición}, y difiere de libros que siguen un estilo similar: \textit{Harry Potter y El Quijote}. El resumen de los trabajos cualitativos referidos en los párrafos anteriores se muestra en la Tabla \ref{tab:1}.  
+
+%Input - Tabla 1 - Análisis disponibles en la literatura de la serie Papelucho
+\input{tablas/tabla01}
+
+        %------------------------------------------
+        % Sección 1.2.2 - Fundamentos de la minería de texto
+        %------------------------------------------
+        
+\subsection{Fundamentos de la minería de texto}
+
+Debido a la inmensa cantidad de textos que existen publicados no solo físicamente, sino que disponibles a través de la web, la \textbf{minería de texto} da la oportunidad de trabajar con grandes cantidades de textos sin organización en forma de datos, establecer patrones y extraer información útil que permita realizar análisis de los textos utilizando distintas herramientas informáticas \citep{BIBLIO2007}. Por ejemplo, el trabajo realizado por \citet{orellana2018text} utiliza técnicas de minería de texto para medir la similitud entre diferentes contenidos de los cursos ofrecidos por diferentes instituciones educacionales en Ecuador, procesando con éxito grandes cantidades de textos sin estructura utilizando los métodos propuestos por \citet{carnerud2017exploring}. Este ha sido representado en la figura \ref{fig:text-mining} y consiste en las siguientes etapas:
+
+ \begin{enumerate}
+    \item \textbf{Recolección.} Esta etapa considera la recopilación de datos desde diferentes recursos, tales como sitio web, correos electrónicos, comentarios de clientes, archivo de documentos, o de libros. Dependiendo de la aplicación, este proceso puede ser completamente automatizado o guiado por una persona encargada de realizar este proceso.
+    
+    \item \textbf{Preprocesamiento.} Una práctica común en la minería de texto es preprocesar el texto antes de la aplicación de una clasificación o un algoritmo de transformación \citep{allahyari2017brief}. El objetivo de esta etapa es reducir el texto a una representación más simple que conserve las principales características del texto original. Los más comunes son la eliminación de palabras vacías (\textit{stopwords}), la eliminación de puntuación, transformación, derivación y lematización según sea el caso. Las últimas dos, transforman las palabras en su forma raíz o base mientras que las otras eliminan caracteres y palabras innecesarias.
+
+    \item \textbf{Selección de características y construcción de vectores de características.} Para un computador es imposible procesar de inmediato los textos, lo cual es un problema inherente. Los textos también deben interpretarse numéricamente. Los términos se utilizan a menudo como características del texto. Esto le da a la representación del texto una gran dimensión. Las características deben filtrarse para reducir las dimensiones y eliminar el ruido para mejorar el rendimiento de clasificación y la eficiencia de procesamiento.
+ \end{enumerate}
+
+ \citet{pokou2016authorship} utilizando los procesos de minería de texto y en particular patrones de secuencia (\textbf{n-gramas}) en su trabajo, que estudió más de 30 libros escritos por 10 diferentes autores y 90000 frases confirmó que es posible inferir según el estilo de escritura el autor de cada uno de los libros estudiados. Por otro lado, 
+ \citet{ban2012text} utilizó este mismo método para cuantificar la \textbf{frecuencia} con la que aparecen distintas palabras y frases en textos de biología usados por estudiantes de secundaria para comparar la dificultad para entender los libros con otros tipos de textos. El resultado de su trabajo indicó que los libros escritos en inglés tienen una dificultad superior a los textos encontrados en la revista TIME.
+
+\begin{figure}[h]
+    \includegraphics[width=16cm]{text-mining}
+    \caption{ Proceso de preprocesamiento del texto.}
+    \centering
+    {\textbf{Fuente:} \citep{orellana2018text}
+    \label{fig:text-mining}
+\end{figure}
+    
+
+
+Con los textos estructurados se puede aplicar el \textbf{análisis de sentimientos}, que es un método automatizado para determinar si un texto producido transmite una visión positiva, negativa o compartida de un objeto (es decir, elemento, individuo, sujeto, caso, etc.). Como lo describe \citet{Liu2012}, la investigación en análisis de sentimientos ha crecido exponencialmente debido principalmente a la gran cantidad de usos que tiene para los datos que ya poseen una estructura definida. La clasificación de sentimientos se puede hacer en cuatro niveles, como nivel de documento, nivel de oración y nivel de aspecto o característica \citep{Vohra2013ACS}.
+
+\begin{enumerate}
+    \item Nivel de documento. Clasificación que utiliza todos los documentos como un todo para clasificarlo positiva o negativamente en una sola categoría.
+    
+    \item Nivel de oración. El nivel de oración inicia categorizando las oraciones como objetivas o subjetivas, para luego clasificarlas como positiva, negativa o neutra.
+    
+    \item Nivel de aspecto o característica- Este tipo de clasificación de sentimiento analiza la identificación y extracción de características de elementos de los datos de origen.
+\end{enumerate}
+
+Las definiciones realizadas en el trabajo  de \citet{anvarliterature}, que realiza una revisión de la literatura sobre la aplicación del análisis de sentimientos utilizando técnicas de aprendizaje automático dan cuenta de varias técnicas disponibles. Por ejemplo:
+
+\begin{enumerate}
+\item \textbf{Enfoque basado en el léxico.} Se aplica un diccionario que contiene términos tanto positivos como negativos utilizados por Lexicón para evaluar la polaridad de opinión. El recuento de palabras positivas y negativas se analiza en el texto. Si el texto es más positivo, se le dará una puntuación positiva al texto. El texto recibe una puntuación negativa si contiene una gran cantidad de palabras negativas o pesimistas. Si el texto contiene el mismo número de términos buenos y malos, se le da una puntuación neutral. Se desarrolla un léxico de opinión (opiniones positivas y negativas) para finalizar la palabra positiva o negativa \citep{medhat2014sentiment}.
+
+    \begin{itemize}
+        \item \textbf{Enfoque basado en diccionario.}  Una pequeña cantidad de palabras de opinión con pautas establecidas se recopilan manualmente\citep{medhat2014sentiment}, y las soluciones basadas en este enfoque los sinónimos y opuestos de estas palabras se buscan y se agregan al grupo determinado según su clasificación. La colección disminuye lentamente hasta que no hay más términos nuevos. Este método tiene la desventaja de depender de la escala del diccionario, la intensidad de la clasificación de los sentimientos y a medida que aumenta el tamaño del diccionario, este enfoque disminuye su efectividad \citep{jain2016application}.
+        
+        \item \textbf{Enfoque basado en corpus.} Se basa en grandes corporaciones para modelos de opinión sintácticos y semánticos. Las palabras creadas son específicas del contexto y requieren un gran conjunto de datos etiquetados \citep{jain2016application}.
+        
+    \end{itemize} 
+    
+    \item \textbf{Enfoque basado en el aprendizaje automático.} Las técnicas de aprendizaje automático en la clasificación de sentimientos dependen de que tan bien conocida sea el uso de aprendizaje automático en datos obtenidos de los textos. La clasificación del sentimiento basada en el aprendizaje automático se puede clasificar principalmente en métodos de aprendizaje supervisados y no supervisados \citep{aydougan2016comprehensive}, resumidas en la figura \ref{fig:machine-learning}.
+    
+    \begin{itemize}
+        \item \textbf{Aprendizaje supervisado.} Los métodos de aprendizaje supervisados se basan en manuales de formación de etiquetado. El aprendizaje supervisado es un método de clasificación eficaz y se ha utilizado con resultados muy prometedores para clasificar opiniones. Las técnicas de clasificación supervisada que se utilizan habitualmente en el análisis de sentimientos son: Máquina de soporte de vectores (SVM), Naïve Bayes (NB) Máxima entropía (ME), Red neuronal artificial (NN) y Árbol de decisión (DT). Algunos algoritmos menos utilizados son Regresión logística (LR), K-Vecino más cercano (KNN), Bosque aleatorio (RF) y Red bayesiana (BN) \citep{aydougan2016comprehensive}.
+        
+        \item \textbf{Aprendizaje no supervisado.} Se utiliza para entrenar un clasificador y no necesita utilizar datos previamente listados, como si los requiere el aprendizaje supervisado. En la mayoría de los usos del aprendizaje automático no supervisado se utilizan los algoritmos \textit{K-means} y Apriori, el aprendizaje no supervisado además puede ser dividido en grupos y asociaciones \citep{ahmadmachine}.
+\end{itemize}
+\end{enumerate}
+
+\begin{figure}[h]
+    \includegraphics[width=16cm]{machine-learning}
+    \caption{Enfoque basado en aprendizaje automático.}
+    \centering
+    \textbf{Fuente:} \citep{medhat2014sentiment}
+    \label{fig:machine-learning}
+\end{figure}
+
+No existen trabajos publicados que hayan intentado caracterizar la serie Papelucho desde el punto de vista cuantitativo, por ejemplo, usando  minería de texto y análisis de sentimientos. El trabajo que más se aproxima, es la investigación desarrollada por \citet{MARTINEZ-GAMBOA2015}, que estudió más de una treintena de libros de autores chilenos publicados entre los años 1862 y 2011, determinando mediante técnicas de agrupamiento que algunos libros de Papelucho resultan similares a otros libros nacionales como \textit{Palomita Blanca} de Enrique Lafourcade o \textit{Mala Onda} de Alberto Fuguet. Estos agrupamientos se realizaron tomando en cuenta lo planteado por \citet{biber1998corpus}, distribuyendo los libros en cada uno de los ejes descritos en su libro, 1) Narración-Descripción, 2) Cognición-Emoción y 3) Social-Individual. No obstante, no se caracterizan los libros ni se señalan elementos comunes que determinan las características de los agrupamientos. También se destaca el  análisis realizado en los cuentos de Hernán Casciari, que cuenta con más de 300 cuentos publicados en este idioma donde sus principales características encontradas son el humor y drama relacionados con la vida de los protagonistas, y esta gran base de datos de cuentos se ha utilizado para enseñar las técnicas básicas de minería de texto en el portal educativo \textit{aprendemachinelearning.com} publicado el 2019 disponible gratuitamente.
+
+\citet{hsu2021emotional}  compara los comentarios publicados en el portal de opiniones de películas \textit{https://www.imdb.com/} particularmente de Coco y Soul, con el libreto de estas mismas, su trabajo se enfoca en las escenas relacionadas con la muerte, concluyendo que, los comentarios positivos al ser evaluados con técnicas de análisis de sentimientos son más positivos que el libreto de las escenas descritas como positivas utilizando las mismas técnicas, en cambio, los comentarios negativos obtienen un puntaje similar a las escenas descritas como negativas.
+
+A modo de \textbf{resumen}, luego de la revisión de la literatura es posible establecer que: 
+\begin{enumerate}
+    \item Existen análisis cualitativos de Papelucho que indican la existencia de características importantes que fomentan el desarrollo de competencias lectoras.
+    \item La \textbf{minería de texto} se encarga de los análisis cualitativos de los libros, que son seleccionados por sus características similares con la colección.
+    \item La Metodología propuesta de minería de texto tiene estas etapas: 
+    \begin{enumerate}
+        \item Recolección.
+        \item Preprocesamiento.
+        \item Selección de características y construcción de vectores de características.
+    \end{enumerate}
+    El objetivo de esta es entregar texto estructurado para realizar métodos de análisis de sentimientos.
+    \item Las Metodologías propuestas para análisis de sentimientos se puede realizar en 3 distintos niveles de abstracción. Los análisis además pueden utilizar distintos tipos de métodos:
+\begin{enumerate}
+    \item Basado en el léxico, que puede ser basado en diccionarios o en el corpus
+    \item Basado en el aprendizaje automático, que puede ser del tipo supervisado o no supervisado.
+\end{enumerate}  
+    \item Hasta la fecha del desarrollo de este proyecto no existen análisis cuantitativos en la literatura que caractericen la serie de Papelucho.
+\end{enumerate}
+
+
+    %=================================
+    % Sección 1.3 - Descripción del problema
+    %=================================
+
+\newpage
+
+\section{Definición del problema}\label{sec:problema}
+
+La serie Papelucho destaca por tener al menos cuatro libros de su catálogo que año tras año son recomendados por el MINEDUC como parte de los procesos formativos educacionales. Estudios cualitativos, han indicado que la serie presenta características favorables para el aprendizaje indicando diferencias y similitudes con otros libros. Sin embargo, no se han realizado estudios que corroboren esto desde el punto de vista cuantitativo. Por otro lado, diferentes análisis basados en minería de texto y el análisis de sentimientos han permitido efectuar análisis similares en otros contextos usando otros libros. Dado esto, es posible formular las siguientes preguntas de investigación:
+
+\begin{enumerate}
+    \item ¿El uso de minería de texto y análisis de sentimientos coincidirá con los hallazgos identificados para la serie Papelucho en forma cualitativa por la literatura?
+    \item ¿Qué libros de la serie resultan similares y diferentes entre sí, según sus elementos literarios y sus sentimientos?
+    \item ¿Qué características particulares posee la serie Papelucho a nivel literario y sentimientos que le diferencian o asemejan a otros libros?
+\end{enumerate}
+
+
+
+
+    %=================================
+    % Capitulo 3 - Descripción de la solución propuesta
+    %=================================
+\chapter{Descripción de la solución propuesta}   
+
+\section{Características de la solución}
+
+La solución propuesta es una investigación experimental que intentará encontrar si existen similitudes entre trabajos que describen cualitativamente características importantes para el desarrollo de competencias lectoras descritas en la literatura, y características cuantitativas que se obtendrán utilizando distintos métodos de minería de texto y análisis sentimientos de la serie Papelucho y libro seleccionados.  El resultado del trabajo es un documento que describe las metodologías utilizadas para el desarrollo experimental, los análisis realizados
+y las conclusiones obtenidas. Este documento podría ser utilizada en futuros
+trabajos de investigación que busquen identificar textos que ayuden a desarrollar
+las competencias lectoras, o seleccionar textos de similares características.
+
+\section{Alcance y limitaciones}
+
+A continuación, se indican los alcances y limitaciones.
+
+\begin{itemize}
+ \item Las características cualitativas utilizadas en el proyecto se limitan las obtenidas de trabajos anteriores realizados por especialistas.
+ \item El universo de libros que será utilizado en los análisis está reducido a los libros de la serie papelucho, y los libros seleccionados en la investigación.
+ \item Se limitará al uso de diccionarios preexistentes para la clasificación de sentimientos de palabras.
+ \item El trabajo está acotado a la investigación y experimentación de las metodologías de análisis de sentimientos, por lo que se descarta la medición del desarrollo de competencias lectoras y evaluación \textit{in-situ} con personas.
+\end{itemize}
+
+%\textcolor{red}{¿Qué hay de la parte pedagógica? ¿Harás pruebas?¿Cómo validarás la mejora en la lectura? ¿Eso es parte de tu trabajo? Debe quedar bien claro el alcance del mismo.}
+
+
+    %=================================
+    % Sección 1.7 - Herramientas, Ambiente de trabajo y metodología
+    %=================================
+    
+\chapter{Herramientas, ambiente de trabajo y metodología}
+
+        %------------------------------------------
+        % Sección 1.7.1 - Herramientas
+        %------------------------------------------
+
+\section{Herramientas}
+
+Para el desarrollo se utiliza un laptop con un procesador i5 de novena generación, 8gb de memoria RAM y un disco de estado sólido.
+
+       %------------------------------------------
+       % Sección 1.7.2 - Ambiente de trabajo
+       %------------------------------------------
+        
+\section{Ambiente de trabajo}
+
+
+El análisis de sentimientos es la práctica de utilizar algoritmos para clasificar varias muestras de texto relacionado en categorías generales positivas y negativas. Se utilizará en el desarrollo del proyecto los lenguajes de programación \textbf{PYTHON} y \textbf{R}. Estos lenguajes de programación cuentan con una gran comunidad que da soporte y desarrolla librerías que facilitan el trabajo. A continuación se listan las principales para Python: 
+
+ \begin{enumerate}
+     \item \textbf{NLTK} (Natural Language Toolkit) contiene varias utilidades que permiten manipular y analizar datos lingüísticos de manera efectiva. Entre sus funciones avanzadas se encuentran los clasificadores de texto que pueden utilizar muchos tipos de clasificación, incluido el análisis de sentimientos.
+     
+     \item La librería \textbf{SpaCy} es atractiva para proyectos de análisis de sentimientos que necesitan mantener su rendimiento a escala, o que pueden beneficiarse de un enfoque de programación altamente orientado a objetos. SpaCy es un entorno multiplataforma que se ejecuta en Cython, un superconjunto de Python que permite el desarrollo de marcos de trabajo basados en C de ejecución rápida para Python.
+     
+     \item \textbf{TextBlob} tiene una función de análisis de sentimiento integrada basada en reglas con dos propiedades: subjetividad y polaridad. 
+\end{enumerate}    
+
+Para R las principales librerías estudiadas para el proyecto son:
+
+\begin{enumerate}
+    \item \textbf{Quanteda} es la librería de referencia para el análisis de texto cuantitativo, para muchos científicos de datos manejar esta librería es imprescindible, ya que permite hacer mucho, desde conceptos básicos de procesamiento del lenguaje natural (diversidad léxica, preprocesamiento de texto, constitución de un corpus, objetos token, matriz de características de documento), hasta análisis estadístico complejo, como puntuaciones de palabras o peces de palabras, clasificación de documentos (por ejemplo, Naive Bayes).
+    
+    \item \textbf{Text2vec} extremadamente útil si se está creando algoritmos de aprendizaje automático basados en datos de texto. Este paquete permite construir una matriz de términos de documentos (dtm) o una matriz de concurrencia de términos (tcm) a partir de documentos. Como tal, vectoriza el texto creando un mapa de palabras o n-gramas a un espacio vectorial. En base a esto, puede ajustar un modelo a ese dtm o tcm.
+    
+    \item \textbf{Tidytext} es un paquete esencial para la visualización y la gestión de datos. Uno de sus beneficios es que funciona muy bien en conjunto con otras herramientas ordenadas en R como dplyr o tidyr. De hecho, fue construido con ese propósito. El esfuerzo aplicado a la limpieza de datos es una ardua labor y muchos de estos métodos no se pueden aplicar fácilmente al texto. \citet{silge2016tidytext} desarrollaron tidytext para hacer que las tareas de minería de texto sean más fáciles, más efectivas y consistentes con las herramientas que ya se utilizan ampliamente. Como resultado, este paquete proporciona comandos que permiten convertir texto a formatos ordenados.
+    
+    \item Cuando se trata de análisis de texto, \textbf{Stringr} es un paquete particularmente útil para trabajar con expresiones regulares, ya que proporciona funciones útiles de coincidencia de patrones. Otras funciones incluyen la manipulación de caracteres (manipulación de caracteres individuales en cadenas en vectores de caracteres) y herramientas de espaciado (agregar, eliminar, manipular espacios).
+\end{enumerate}
+
+       %------------------------------------------
+       % Sección 1.7.3 - Metodologías
+       %------------------------------------------
+       
+\section{Metodología}
+
+Basándose en los métodos propuestos en la literatura, el método a seguir involucra tres etapas. En la \textbf{primera} se usará la \textbf{metodología de investigación cualitativa} que es de carácter exploratorio, ya que se inicia con la recolección de definiciones y características obtenidas de la literatura de Papelucho y libros con los que ha sido comparado en estudios anteriores, esta \textbf{recolección} se utilizará para confeccionar la base de datos representativa con los archivos en formato .txt obtenidos de distintas fuentes. En esta etapa se empleará Python y R para el \textbf{preprocesamiento}, donde se realizarán las siguientes actividades en los documentos:
+\begin{itemize}
+    \item Normalización de minúsculas y mayúsculas.
+    \item Eliminación de tildes.
+    \item Eliminación de números.
+    \item Eliminación de palabras vacías.
+    \item Lematización.
+\end{itemize}
+
+
+En la \textbf{segunda etapa} se utiliza la \textbf{metodología de investigación cuantitativa} donde la recolección de datos y los análisis realizados son del tipo numérico, datos obtenidos utilizando las técnicas de minería de texto, con el que se pueden obtener tendencias, promedios, comprobar relaciones entre los datos obtenidos con la investigación cualitativa y obtener resultados generales de estas comparaciones. Las distintas técnicas a trabajar en esta etapa son:
+\begin{itemize}
+    \item Extracción de reglas de asociación, que es similar al análisis de correlación que intenta encontrar las relaciones entre dos variables.
+    \item Nube de palabras, para representar la frecuencia de las mismas en los textos.
+\end{itemize}
+
+En la \textbf{tercera etapa} del desarrollo se aplicarán distintas metodologías de análisis de sentimientos mediante la minería de texto con los datos obtenidos de la etapa anterior, donde la base de datos está refinada con textos estructurados, las metodologías a aplicar en estos documentos son:
+\begin{itemize}
+    \item El enfoque basado en el léxico, con las técnicas basado en diccionario y el basado en el corpus.
+    \item El enfoque basado en el aprendizaje automático, y las distintas técnicas de aprendizaje supervisado.
+\end{itemize}
+Estas metodologías se aplicarán y obtendrán resultados que luego serán interpretados, y dependiendo de estos se elegirá cuáles son de mayor valor para la toma de decisiones del trabajo.
+
+La cuarta etapa utilizará estos resultados para identificar las características principales de cada libro, para luego aplicar las técnicas de aprendizaje automático de agrupamiento para identificar similitudes entre estos, como:
+\begin{itemize}
+    \item K-Significados
+    \item K-Medoids
+    \item Difusa
+    \item Jerárquico
+\end{itemize}
+
+La tercera y cuarta etapa se realizará en varias oportunidades para obtener datos precisos y así obtener resultados que permitan ser contrastados a los obtenidos en la primera etapa donde se realiza el análisis cualitativo de la serie. 
+
+
+%Recolectará los datos que ayudarán a probar o desacreditar su hipótesis.
+%Analizará los datos obtenidos.
+%Clasificará los datos para que el trabajo tenga validez científica.
+
+    %=================================
+    % Sección 1.8 - Planificación
+    %=================================
+    
+\chapter{Plan de trabajo}
+
+%\textcolor{red}{Me gustaría ver una Carta Gantt, aunque sea como Anexo.}
+
+Para el desarrollo se estiman 620 horas de trabajo, donde la fecha de inicio es el 6 de septiembre del año 2021 y su fecha de finalización es la primera semana de julio del año 2022. La primera parte del proyecto finaliza al término del semestre. Durante los meses de enero y febrero se trabajará con menos intensidad para realizar la minería de texto finalizando el 26 de febrero, luego  en la etapa de experimentación, evaluación de resultados y la redacción de la memoria se asigna 6 horas diarias de trabajo de lunes a viernes, dando un total de 17 semanas. Hitos de la planificación en la tabla \ref{tab:plan_trabajo}.
+
+%Input - Tabla 2 - Planificación
+\input{tablas/tabla02}
+
+\chapter{Anexos}
+
+% \begin{figure}[h]
+%     \includegraphics[width=16cm]{chapters/mineria-texto.png}
+%     \label{fig:planificación-minería-texto}
+%     \caption{Planificación: Minería de texto}
+% \end{figure}
+
+%\begin{figure}[h]
+%    \includegraphics[width=16cm]{chapters/experimentacion.png}
+%    \label{fig:planificación-experimentación}
+%    \caption{Planificación: Experimentación}
+%\end{figure}
+
+% \begin{figure}[h]
+%    \includegraphics[width=16cm]{chapters/resultados.png}
+%    \label{fig:planificación-eevaluacion-resultados}
+%    \caption{Planificación: Evaluación de resultados}
+%\end{figure}
+
+%\begin{figure}[htp]
+%    \includegraphics[width=16cm]{chapters/redaccion.png}
+%    \label{fig:planificación-memoria}
+%    \caption{Planificación: Redacción de memoria y presentación}
+%\end{figure}
